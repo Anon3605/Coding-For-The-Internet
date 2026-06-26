@@ -1,7 +1,3 @@
-// =============================================
-// CSE 391 - Assignment 1 | main.js
-// =============================================
-
 // --- Theme Toggle ---
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
@@ -10,13 +6,13 @@ const body = document.body;
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
     body.classList.add('light-mode');
-    themeToggle.innerHTML = '☀️ <span>Light</span>';
+    themeToggle.innerHTML = ' <span>Light</span>';
 }
 
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('light-mode');
     const isLight = body.classList.contains('light-mode');
-    themeToggle.innerHTML = isLight ? '☀️ <span>Light</span>' : '🌙 <span>Dark</span>';
+    themeToggle.innerHTML = isLight ? ' <span>Light</span>' : ' <span>Dark</span>';
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
 });
 
@@ -107,7 +103,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     if (locationEl) {
-        locationEl.textContent = `📍 ${window.location.href}`;
+        locationEl.textContent = ` ${window.location.href}`;
     }
 });
 
