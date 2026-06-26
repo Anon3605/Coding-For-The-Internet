@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal homepage of Md. Arafat Sarkar — CSE student at BRAC University." />
+    <meta name="author" content="Md. Arafat Sarkar" />
+    <meta name="keywords" content="CSE, BRAC University, student, portfolio, web development" />
+    <title>Md. Arafat Sarkar | Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Internal CSS: minor one-off overrides only -->
+    <style>
+        /* Inline-style alternative demo: hero name accent */
+        
+        .hero h1 .first-name {
+            letter-spacing: -1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="#home" class="nav-logo">&lt;<span>Anon3605</span>/&gt;</a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="hobbies.html">Hobbies --> </a></li>
+        </ul>
+
+        <!-- Bonus: Dark / Light Toggle -->
+        <button id="themeToggle" aria-label="Toggle theme">🌙 <span>Dark</span></button>
+    </nav>
+
+    <main>
+
+        <!-- ===================== HERO (HOME) ===================== -->
+        <section id="home" class="hero">
+            <p class="hero-badge">// student · developer · learner</p>
+
+            <div class="hero-photo-wrapper">
+                <!-- LOCAL image stored in images/ folder -->
+                <img src="images/photo.jpg" alt="Photo of Md. Arafat Sarkar" class="hero-photo" onerror="this.src='https://api.dicebear.com/8.x/initials/svg?seed=YN&backgroundColor=1c2230&textColor=58a6ff&radius=50'" />
+                <span class="status-dot" title="Available for opportunities"></span>
+            </div>
+
+            <h1>
+                Hi, I'm <span class="highlight first-name">Arafat</span>
+            </h1>
+            <p class="hero-tagline">
+                <span class="typed-text">CSE Student @ BRAC University</span><span style="color:var(--accent)">|</span>
+            </p>
+
+            <div class="hero-cta">
+                <a href="#about" class="btn btn-primary">Explore My Page ↓</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+
+            <div class="scroll-hint" aria-hidden="true">
+                <span>scroll</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 11L2 5h12z"/>
+        </svg>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================== ABOUT / PERSONAL INFO ===================== -->
+        <section id="about" class="section">
+            <p class="section-label reveal">// 01. about me</p>
+            <h2 class="section-title reveal">Personal Information</h2>
+
+            <div class="info-grid reveal">
+                <div class="info-card">
+                    <p class="card-label">Full Name</p>
+                    <p class="card-value"><strong>Md. Arafat Sarkar</strong></p>
+                </div>
+                <div class="info-card">
+                    <p class="card-label">Student ID</p>
+                    <p class="card-value">22101914</p>
+                </div>
+                <div class="info-card">
+                    <p class="card-label">University</p>
+                    <p class="card-value">
+                        <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;">
+              BRAC University ↗
+            </a>
+                    </p>
+                </div>
+                <div class="info-card">
+                    <p class="card-label">Department</p>
+                    <p class="card-value">Computer Science</p>
+                </div>
+                <div class="info-card">
+                    <p class="card-label">Semester</p>
+                    <p class="card-value">Summer 2026</p>
+                </div>
+                <div class="info-card">
+                    <p class="card-label">Location</p>
+                    <p class="card-value">Dhaka, Bangladesh</p>
+                </div>
+            </div>
+
+            <p class="bio-text reveal">
+                I'm a passionate Computer Science student at BRAC University with a keen interest in
+                <em>Data Engineering</em>, <em>Cybersecurity</em>, and <em>Radio Technology</em>. I love building things and enjoy learning about how technology shapes the world around us. Outside of academics, you'll find me reading, exploring open-source
+                projects, or watching a Documentaries.
+            </p>
+
+            <p class="bio-text reveal">
+                This semester I'm enrolled in <strong>CSE 391: Programming for the Internet</strong>, where I'm learning to build modern web applications from the ground up. This portfolio is my first step into the world of public web publishing — feel
+                free to look around! You can also check out the
+                <a href="https://discord.gg/" target="_blank" rel="noopener" style="color:var(--accent);">CSE 391 Discord</a> for class discussions.
+            </p>
+
+            <!-- Favorite Quote -->
+            <blockquote class="quote-block reveal">
+                Any sufficiently advanced technology is indistinguishable from magic.
+                <cite>— Arthur C. Clarke</cite>
+            </blockquote>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================== EDUCATION ===================== -->
+        <section id="education" class="section">
+            <p class="section-label reveal">// 02. education</p>
+            <h2 class="section-title reveal">Academic Background</h2>
+
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <h3>B.Sc. in Computer Science & Engineering</h3>
+                    <p class="meta">BRAC University &nbsp;·&nbsp; 2022 – Present</p>
+                    <p>
+                        Pursuing my undergraduate degree with a focus on Cybersecurity, Data Engineering, and Radio Technology. Current CGPA: <strong>3.09</strong>.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Higher Secondary Certificate (HSC)</h3>
+                    <p class="meta">Ispahani Public School & College &nbsp;·&nbsp; 2020</p>
+                    <p>
+                        Completed HSC in <strong>Science</strong> group. GPA: <strong>5.00</strong>. Developed an early interest in computers and mathematics during these years.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Secondary School Certificate (SSC)</h3>
+                    <p class="meta">Cahttogram Government High School &nbsp;·&nbsp; 2018</p>
+                    <p>
+                        Completed SSC with <strong>GPA 5.00</strong>. Wanted To be mechanical Engineer at this timeline, Especially Automotive Engineering</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================== SKILLS ===================== -->
+        <section id="skills" class="section">
+            <p class="section-label reveal">// 03. technical skills</p>
+            <h2 class="section-title reveal">What I Work With</h2>
+
+            <p class="bio-text reveal" style="margin-bottom:1.5rem;">
+                Technologies and tools I use across networking, systems, blockchain, and full-stack development:
+            </p>
+
+            <div class="reveal" style="margin-bottom:1.5rem;">
+                <p class="group-label">Languages</p>
+                <div class="skills-grid">
+                    <span class="skill-badge"><b>PHP</b></span>
+                    <span class="skill-badge"><b>JavaScript</b></span>
+                    <span class="skill-badge"><b>TypeScript</b></span>
+                    <span class="skill-badge"><b>Python</b></span>
+                    <span class="skill-badge"><b>Lua</b></span>
+                    <span class="skill-badge"><b>C</b></span>
+                    <span class="skill-badge"><b>C++</b></span>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-bottom:1.5rem;">
+                <p class="group-label">Frameworks & Libraries</p>
+                <div class="skills-grid">
+                    <span class="skill-badge green"><b>Laravel</b></span>
+                    <span class="skill-badge green"><b>Next.js</b></span>
+                    <span class="skill-badge green"><b>React</b></span>
+                    <span class="skill-badge green"><b>Node.js</b></span>
+                    <span class="skill-badge green"><b>Tailwind CSS</b></span>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-bottom:1.5rem;">
+                <p class="group-label">Databases & Data</p>
+                <div class="skills-grid">
+                    <span class="skill-badge orange"><b>MySQL</b></span>
+                    <span class="skill-badge orange"><b>PostgreSQL</b></span>
+                    <span class="skill-badge orange"><b>Redis</b></span>
+                    <span class="skill-badge orange"><b>Apache Kafka</b></span>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-bottom:1.5rem;">
+                <p class="group-label">Networking & Systems</p>
+                <div class="skills-grid">
+                    <span class="skill-badge purple"><b>Linux</b></span>
+                    <span class="skill-badge purple"><b>TCP/IP</b></span>
+                    <span class="skill-badge purple"><b>Cisco IOS</b></span>
+                    <span class="skill-badge purple"><b>Subnetting</b></span>
+                    <span class="skill-badge purple"><b>VLANs</b></span>
+                    <span class="skill-badge purple"><b>Routing Protocols</b></span>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-bottom:1.5rem;">
+                <p class="group-label">Cybersecurity</p>
+                <div class="skills-grid">
+                    <span class="skill-badge red"><b>Network Security</b></span>
+                    <span class="skill-badge red"><b>Ethical Hacking</b></span>
+                    <span class="skill-badge red"><b>Web App Security</b></span>
+                    <span class="skill-badge red"><b>Cryptography</b></span>
+                    <span class="skill-badge red"><b>SIEM/SOC(Wazuh, Suricata, Snort)</b></span>
+                    <span class="skill-badge red"><b>Kali Linux</b></span>
+                    <span class="skill-badge red"><b>Wireshark</b></span>
+                    <span class="skill-badge red"><b>Nmap</b></span>
+                    <span class="skill-badge red"><b>Metasploit</b></span>
+                    <span class="skill-badge red"><b>Burp Suite</b></span>
+                    <span class="skill-badge red"><b>Nessus</b></span>
+                    <span class="skill-badge red"><b>OWASP</b></span>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-bottom:1.5rem;">
+                <p class="group-label">Blockchain</p>
+                <div class="skills-grid">
+                    <span class="skill-badge orange"><b>Mina ZkApp</b></span>
+                    <span class="skill-badge orange"><b>Smart Contracts</b></span>
+                    <span class="skill-badge orange"><b>Web3.js</b></span>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <p class="group-label">Tools & DevOps</p>
+                <div class="skills-grid">
+                    <span class="skill-badge"><b>Git</b></span>
+                    <span class="skill-badge"><b>GitHub</b></span>
+                    <span class="skill-badge"><b>Docker</b></span>
+                    <span class="skill-badge"><b>VS Code</b></span>
+                    <span class="skill-badge"><b>Postman</b></span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================== FAVORITES LIST ===================== -->
+        <section id="favorites" class="section">
+            <p class="section-label reveal">// 04. favorites</p>
+            <h2 class="section-title reveal">Top Favorite Movies</h2>
+
+            <p class="bio-text reveal">
+                Cinema has a way of expanding how we see the world. Here are the films I return to most:
+            </p>
+
+            <ol class="favorites-list reveal">
+                <li>Interstellar (2014)</li>
+                <li>The Shawshank Redemption (1994)</li>
+                <li>Parasite (2019)</li>
+                <li>The GodFather (3 Parts) (2009)</li>
+                <li>The Matrix (1999)</li>
+                <li>Spirited Away (2001)</li>
+            </ol>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================== SCHEDULE TABLE ===================== -->
+        <section id="schedule" class="section">
+            <p class="section-label reveal">// 05. schedule</p>
+            <h2 class="section-title reveal">Current Semester Courses</h2>
+
+            <div class="table-wrapper reveal">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Credits</th>
+                            <th>Schedule</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Row with multi-line content -->
+                            <td class="td-bold">CSE 391</td>
+                            <td>
+                                PROGRAMMING FOR THE INTERNET
+                                <br />
+                                <small style="color:var(--text-muted);">
+                  Covers HTML, CSS, JavaScript, and full-stack web development fundamentals.
+                  Lab sessions include hands-on coding exercises.
+                </small>
+                            </td>
+                            <td><span class="tag tag-blue">3.0</span></td>
+                            <!-- rowspan demo: merge across two rows conceptually via coloring -->
+                            <td>Sun · Tue · Thu<br /><small style="color:var(--text-muted);">11:00 – 12:30</small></td>
+                            <td><span class="tag tag-green">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-bold">CSE 490 </td>
+                            <td>
+                                INTRODUCTION TO FOOTBALL DATA AND ANALYTICS
+                            </td>
+                            <td><span class="tag tag-blue">3.0</span></td>
+                            <td>Mon · Wed<br /><small style="color:var(--text-muted);">09:30 – 11:00</small></td>
+                            <td><span class="tag tag-green">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-bold">CSE 437</td>
+                            <td>DATA SCIENCE: CODING WITH REAL WORLD DATA</td>
+                            <td><span class="tag tag-blue">3.0</span></td>
+                            <td>Sun · Tue<br /><small style="color:var(--text-muted);">14:00 – 15:30</small></td>
+                            <td><span class="tag tag-green">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-bold">CST333</td>
+                            <td>PERSONAL FINANCE FOR SUSTAINABLE ECONOMIC WELLBEING</td>
+                            <td><span class="tag tag-blue">3.0</span></td>
+                            <td>Mon · Wed<br /><small style="color:var(--text-muted);">16:00 – 17:30</small></td>
+                            <td><span class="tag tag-green">Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================== LINKS & HOBBIES ===================== -->
+        <section id="links" class="section">
+            <p class="section-label reveal">// 06. links &amp; interests</p>
+            <h2 class="section-title reveal">My World Beyond Class</h2>
+
+            <div class="links-grid reveal">
+
+                <div class="link-category">
+                    <h3>University</h3>
+                    <ul>
+                        <li><a href="https://www.bracu.ac.bd" target="_blank" rel="noopener">BRAC University</a></li>
+                        <li><a href="https://usis.bracu.ac.bd" target="_blank" rel="noopener">USIS Portal</a></li>
+                        <li><a href="hobbies.html">My Hobbies Page</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-category">
+                    <h3>Dev & Engineering</h3>
+                    <ul>
+                        <li><a href="https://laravel.com/docs" target="_blank" rel="noopener">Laravel Docs</a></li>
+                        <li><a href="https://nextjs.org/docs" target="_blank" rel="noopener">Next.js Docs</a></li>
+                        <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                        <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://stackoverflow.com" target="_blank" rel="noopener">Stack Overflow</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-category">
+                    <h3>Cybersecurity</h3>
+                    <ul>
+                        <li><a href="https://tryhackme.com" target="_blank" rel="noopener">TryHackMe</a></li>
+                        <li><a href="https://hackthebox.com" target="_blank" rel="noopener">Hack The Box</a></li>
+                        <li><a href="https://owasp.org" target="_blank" rel="noopener">OWASP</a></li>
+                        <li><a href="https://portswigger.net/web-security" target="_blank" rel="noopener">PortSwigger Academy</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-category">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html" target="_blank" rel="noopener">Cisco CCNA</a></li>
+                        <li><a href="https://www.rfc-editor.org" target="_blank" rel="noopener">RFC Editor</a></li>
+                        <li><a href="https://www.wireshark.org/docs/" target="_blank" rel="noopener">Wireshark Docs</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-category">
+                    <h3>Blockchain</h3>
+                    <ul>
+                        <li><a href="https://docs.soliditylang.org" target="_blank" rel="noopener">Solidity Docs</a></li>
+                        <li><a href="https://hardhat.org/docs" target="_blank" rel="noopener">Hardhat Docs</a></li>
+                        <li><a href="https://cryptozombies.io" target="_blank" rel="noopener">CryptoZombies</a></li>
+                    </ul>
+                </div>
+
+                <div class="link-category">
+                    <h3>Problem Solving</h3>
+                    <ul>
+                        <li><a href="https://www.chess.com" target="_blank" rel="noopener">Chess.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Inline-embedded hyperlink in a sentence (requirement) -->
+            <p class="bio-text reveal" style="margin-top:2rem;">
+                I'm also an active participant in the online developer community — for instance, I recently started contributing to projects hosted on
+                <a href="https://github.com/anon3605" target="_blank" rel="noopener" style="color:var(--accent);">GitHub</a>, which has helped me understand version control and collaborative coding workflows far better than any textbook could.
+            </p>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================== CONTACT FORM (BONUS) ===================== -->
+        <section id="contact" class="section">
+            <p class="section-label reveal">// 07. contact</p>
+            <h2 class="section-title reveal">Get In Touch</h2>
+
+            <p class="bio-text reveal" style="margin-bottom:2rem;">
+                Have a question, want to collaborate, or just say hello? Fill out the form below and your default mail client will open with the message pre-filled.
+            </p>
+
+            <form id="contactForm" class="reveal" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fname">Name *</label>
+                        <input type="text" id="fname" name="name" placeholder="Md. Arafat Sarkar" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="femail">Email *</label>
+                        <input type="email" id="femail" name="email" placeholder="your@email.com" required />
+                    </div>
+                    <div class="form-group full">
+                        <label for="fsubject">Subject</label>
+                        <input type="text" id="fsubject" name="subject" placeholder="What's this about?" />
+                    </div>
+                    <div class="form-group full">
+                        <label for="fmessage">Message *</label>
+                        <textarea id="fmessage" name="message" placeholder="Write your message here…" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top:1rem;">
+          Send Message
+        </button>
+                <div id="formStatus" style="display:none;"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <!-- JS-generated metadata (requirement) -->
+        <p class="footer-meta" id="pageLocation"></p>
+        <p class="footer-meta" id="lastModified"></p>
+        <p class="footer-copy">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script> <strong>Md. Arafat Sarkar</strong>. Built for
+            <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener">BRAC University</a> · CSE 391: Programming for the Internet.
+        </p>
+    </footer>
+
+    <!-- External JS file -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

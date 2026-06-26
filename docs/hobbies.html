@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hobbies and interests of [Your Name]" />
+    <meta name="author" content="[Your Name]" />
+    <title>Hobbies | [Your Name]</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Internal style: page-specific hero tweak */
+        
+        .page-hero {
+            padding: 8rem 2rem 4rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hobby-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        
+        .hobby-card:hover {
+            border-color: var(--accent);
+            transform: translateX(4px);
+        }
+        
+        .hobby-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        
+        .hobby-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        /* Inline style demo: small width adjustment */
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">&lt;<span>Anon3605</span>/&gt;</a>
+        <ul class="nav-links">
+            <li><a href="index.html">← Back to Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" aria-label="Toggle theme">🌙 <span>Dark</span></button>
+    </nav>
+
+    <main>
+        <div class="page-hero">
+            <p class="section-label reveal">// internal page</p>
+            <h1 class="section-title reveal" style="font-size:2.2rem;">My Hobbies &amp; Interests</h1>
+            <p class="bio-text reveal">
+                Academics are just one part of who I am. Outside the classroom I'm drawn to things that make me think differently — whether that's dissecting military history, chasing down a new vulnerability write-up, or simply getting lost in my own thoughts on a quiet
+                walk. These are the things that actually make up my days.
+            </p>
+        </div>
+
+        <div class="section" style="padding-top:0;">
+
+            <div id="war-strategy" class="hobby-card reveal">
+                <h3>War Strategies &amp; Military History</h3>
+                <p>
+                    There's something endlessly fascinating about how battles are won and lost — not just through firepower, but through <em>deception, timing, and information control</em>. I read extensively about historical campaigns: Sun Tzu's principles,
+                    the blitzkrieg doctrine, Cold War proxy conflicts, and modern asymmetric warfare. I'm particularly drawn to the overlap between military strategy and cyber operations — both are ultimately about controlling the battlefield before the
+                    first shot is fired. Games like
+                    <strong>Hearts of Iron</strong> and <strong>Total War</strong> scratch the same itch interactively.
+                </p>
+            </div>
+
+            <div id="cybersecurity" class="hobby-card reveal">
+                <h3>Cybersecurity &amp; Zero-Day Research</h3>
+                <p>
+                    Cybersecurity isn't just my field of study — it's genuinely what I think about in my spare time. I follow vulnerability disclosure feeds, read CVE write-ups, and dig into how zero-day exploits are discovered and weaponised. The cat-and-mouse dynamic between
+                    attackers and defenders is one of the most intellectually intense games being played right now. I spend time on platforms like
+                    <a href="https://www.exploit-db.com" target="_blank" rel="noopener" style="color:var(--accent);">Exploit-DB</a> and follow researchers who publish responsible disclosure reports. My long-term goal is to contribute to that community
+                    — finding and reporting vulnerabilities before the wrong people do.
+                </p>
+            </div>
+
+            <div id="music" class="hobby-card reveal">
+                <h3>Music &amp; Mood</h3>
+                <p>
+                    I don't have a fixed genre — I have <em>moods</em>. Late at night debugging something, it's dark ambient or lo-fi hip-hop. On a productive afternoon, it's something with a driving beat. When I need to think slowly and clearly, it's
+                    jazz or classical. Music for me is less about fandom and more about <strong>atmosphere</strong> — the right track can completely change the texture of whatever I'm doing. I keep a rotating set of playlists for every mental state and
+                    rarely listen to the same thing two days in a row.
+                </p>
+            </div>
+
+            <div id="movies" class="hobby-card reveal">
+                <h3>Movies + Junk Food (Twice a Month)</h3>
+                <p>
+                    About twice a month I set aside a proper movie night — junk food mandatory, phone face-down, full commitment. There's something satisfying about treating it as a
+                    <em>ritual</em> rather than something you half-watch. I tend toward thrillers, war films, and anything with a clever plot structure. The junk food lineup usually involves chips, something fizzy, and whatever looks bad-for-me at the
+                    shop. No regrets.
+                </p>
+            </div>
+
+            <div id="walking" class="hobby-card reveal">
+                <h3>Walking Alone &amp; Getting Lost in Thought</h3>
+                <p>
+                    Some of my best thinking happens not in front of a screen but on a slow, aimless walk through a park with no destination. No podcast, no music — just the ambient noise of the world and wherever my mind decides to go. It's the closest thing I have to meditation.
+                    I process problems differently when I'm moving; ideas that felt tangled at a desk suddenly untangle themselves mid-stride. I think everyone should try doing absolutely nothing productive for thirty minutes a day. Most people are surprised
+                    how much actually gets done.
+                </p>
+            </div>
+
+            <div style="margin-top:3rem;" class="reveal">
+                <a href="index.html" class="btn btn-outline">← Back to Homepage</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer-meta" id="pageLocation"></p>
+        <p class="footer-meta" id="lastModified"></p>
+        <p class="footer-copy">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            <strong>Md. Arafat Sarkar</strong> ·
+            <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener">BRAC University</a>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
