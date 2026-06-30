@@ -18,10 +18,14 @@ themeToggle.addEventListener('click', () => {
 
 // --- Typed Text Effect ---
 const phrases = [
-    'CSE Student @ BRAC University',
-    'Aspiring Full-Stack Developer',
+    'CS Student @ BRAC University',
+    'Aspiring Data Engineer',
+    'Incident Responder',
+    'Cybersecurity Enthusiast',
+    'Open Source Contributor',
+    'Tech Blogger',
     'Problem Solver',
-    'Open Source Enthusiast'
+    'Lifelong Learner'
 ];
 
 let phraseIdx = 0;
