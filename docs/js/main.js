@@ -45,7 +45,7 @@ function typeEffect() {
         charIdx++;
     }
 
-    let delay = isDeleting ? 50 : 90;
+    let delay = isDeleting ? 90 : 100;
 
     if (!isDeleting && charIdx === currentPhrase.length) {
         delay = 1800; // pause at end
